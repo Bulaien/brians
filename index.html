@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter</title>
+    <style>
+body,html{height:90%;margin:0;padding:0;background:#d8d8d6}
+
+.navigation {
+  display:flex;
+  flex-direction: column;
+  flex: 1;
+  vertical-align: top;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.navigation .links {
+display:block;
+font-size: 1rem;
+
+}
+
+.button {
+  font-size: 2rem; 
+  font-weight: bold;
+  width: 10rem;
+  height: 5rem;
+  border-style: none;
+  margin-bottom: 1rem ;
+  background-color: darkgray;
+  color: white;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  transition: opacity 0.15s ;
+  transition: box-shadow 0.15s;
+  box-shadow: 2px 2px 4px rgb(15, 15, 15);
+}
+
+.button:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 10px rgb(15, 15, 15);
+  
+
+  
+}
+.button:active {
+  opacity: 0.3;
+}
+
+.viewbox {
+  display:flex;
+  flex:5;
+
+}
+.rechts {
+  display:flex;
+  flex: 1;
+  vertical-align: top;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+svg{
+  background:url('great-wall-201471_960_720.jpg');
+  background-size:cover;
+  width:70vmin; height:auto;
+  display:block;  
+  margin:0px auto;
+  margin-top: 20px;
+}
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:600;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+svg:hover text{
+  transition:font-size 1.5s ease-in;
+  font-size: 1000px;
+}
+.flexbox {
+  display: flex;
+  box-sizing: border-box;
+  margin:0;
+  vertical-align: top;
+
+}
+.bild{
+  width: 20px;
+  
+ 
+ 
+
+  
+}
+
+</style>
+</head>
+<body>
+  <div class="flexbox">
+    
+    <div class="navigation">
+      
+      
+      <ul>
+        <li class="links"><button class="button" >Home</button></li>
+        <li class="links"><button class="button">CV</button></li>
+        <li class="links"><button class="button">News</button></li>
+        <li class="links"><button class="button">about</button></li>
+      </ul>
+      
+    </div>
+    
+    <div class="viewbox">
+      <svg viewbox="0 0 50 50" width="50" height="50">
+        <defs>
+          <mask id="mask" x="0" y="0" width="180" height="49">
+            <rect x="1" y="1" width="100" height="49" fill="#fff"/>
+            <text x="13" text-anchor="middle" y="49" dy="0">B</text>
+            <text x="20" text-anchor="middle" y="49" dy="0">R</text>
+            <text x="25" id="ltrV" text-anchor="middle" y="49" dy="0">I</text>
+            <text x="30" text-anchor="middle" y="49" dy="0">A</text>
+            <text x="37" text-anchor="middle" y="49" dy="0">N</text>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="49" height="49" mask="url(#mask)" fill-opacity="1" fill="#d8d8d6"/>
+      </svg>
+    </div>
+    <div class="rechts"> <div class="navigation">
+      <ul>
+        <li class="links"><button class="button" >Home</button></li>
+        <li class="links"><button class="button">CV</button></li>
+        <li class="links"><button class="button">News</button></li>
+        <li class="links"><button class="button">about</button></li>
+      </ul>
+    </div>
+    <div class="viewbox"></div>
+  </div>
+  
+    
+    
+</body>
+</html>
